@@ -40,14 +40,14 @@ This project prioritizes clarity and understanding over performance or scalabili
 
 
 # Repository Structure
-- **neural-network-from-scratch/**
+- ## neural-network-from-scratch/
       - train.py
       - requirements.txt
 
-    - ## results/
-      - decision_boundary.png
-      - loss_curve.png
-    - **README.md**
+      - ## results/
+            - decision_boundary.png
+            - loss_curve.png
+      - **README.md**
 
 # How to Run
 
