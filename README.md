@@ -47,6 +47,16 @@ This project prioritizes clarity and understanding over performance or scalabili
     ├── decision_boundary.png
     └── loss_curve.png
 
+# Project
+- **neural-network-from-scratch/**
+      - [train.py]
+      - [requirements.txt]
+
+    - ## results/
+      - decision_boundary.png
+      - loss_curve.png
+    - **[📄README.md]**
+
 # How to Run
 
 ## Clone the repository:
