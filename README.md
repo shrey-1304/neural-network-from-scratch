@@ -8,38 +8,38 @@ The project focuses on explicitly implementing forward propagation, backpropagat
 
 The model is trained on a synthetic 2D classification dataset to analyze learning behavior, loss convergence, and decision boundary formation.
 
-What This Project Demonstrates
+#What This Project Demonstrates
 
-Manual implementation of a feedforward neural network
+* Manual implementation of a feedforward neural network
 
-Forward propagation through a hidden layer
+* Forward propagation through a hidden layer
 
-Backpropagation using the chain rule
+* Backpropagation using the chain rule
 
-Gradient descent–based parameter updates
+* Gradient descent–based parameter updates
 
-Training loss convergence
+* Training loss convergence
 
-Learned non-linear decision boundary
+* Learned non-linear decision boundary
 
 This project prioritizes clarity and understanding over performance or scalability.
 
-Model Overview
+# Model Overview
 
-Architecture: 2 → 4 → 2 (fully connected)
+* Architecture: 2 → 4 → 2 (fully connected)
 
-Hidden activation: Sigmoid
+* Hidden activation: Sigmoid
 
-Output activation: Softmax
+* Output activation: Softmax
 
-Loss function: Cross-entropy
+* Loss function: Cross-entropy
 
-Optimization: Stochastic Gradient Descent (per-sample updates)
+* Optimization: Stochastic Gradient Descent (per-sample updates)
 
-Dataset: Synthetic 2D radial classification task
+* Dataset: Synthetic 2D radial classification task
 
-Repository Structure
-neural-network-from-scratch/
+# Repository Structure
+## neural-network-from-scratch/
 ├── train.py          # Single-file implementation (entry point)
 ├── requirements.txt
 ├── README.md
@@ -47,20 +47,20 @@ neural-network-from-scratch/
     ├── decision_boundary.png
     └── loss_curve.png
 
-How to Run
+# How to Run
 
-Clone the repository:
+## Clone the repository:
 
 git clone <your-repo-url>
 cd neural-network-from-scratch
 
 
-Install dependencies:
+## Install dependencies:
 
 pip install -r requirements.txt
 
 
-Run training:
+## Run training:
 
 python train.py
 
@@ -73,16 +73,16 @@ train the neural network
 
 save the loss curve and decision boundary plots in the results/ directory
 
-Results
-Training Loss
+# Results
+## Training Loss
 
 The loss decreases steadily over training epochs, indicating stable optimization and correct gradient computation.
 
-Decision Boundary
+## Decision Boundary
 
 The learned decision boundary shows that the network successfully models a non-linear separation in the 2D input space. Empirical comparison across different epoch counts shows that learning converges early, with diminishing returns beyond a certain number of epochs.
 
-Notes
+# Notes
 
 This implementation is intentionally not vectorized to keep gradient flow explicit and readable.
 
@@ -90,17 +90,17 @@ The code is written as an experiment script, not as a reusable ML library.
 
 The goal is foundational understanding, not state-of-the-art performance.
 
-Possible Extensions
+# Possible Extensions
 
-Vectorized training loop
+- Vectorized training loop
 
-ReLU activation instead of sigmoid
+- ReLU activation instead of sigmoid
 
-Mini-batch gradient descent
+- Mini-batch gradient descent
 
-Deeper architectures
+- Deeper architectures
 
-Noisy or more complex datasets
+- Noisy or more complex datasets
 
 Requirements
 
@@ -110,7 +110,7 @@ NumPy
 
 Matplotlib
 
-Final note (important tone signal)
+## Final note
 
 This project is meant to demonstrate understanding, not novelty.
 It serves as a transparent reference for how neural networks learn at a low level.
