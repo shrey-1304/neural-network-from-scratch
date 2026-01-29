@@ -38,16 +38,8 @@ This project prioritizes clarity and understanding over performance or scalabili
 
 * Dataset: Synthetic 2D radial classification task
 
-# Repository Structure
-## neural-network-from-scratch/
-├── train.py          # Single-file implementation (entry point)
-├── requirements.txt
-├── README.md
-└── results/
-    ├── decision_boundary.png
-    └── loss_curve.png
 
-# Project
+# REpository Structure
 - **neural-network-from-scratch/**
       - [train.py]
       - [requirements.txt]
@@ -55,7 +47,7 @@ This project prioritizes clarity and understanding over performance or scalabili
     - ## results/
       - decision_boundary.png
       - loss_curve.png
-    - **[📄README.md]**
+    - **README.md**
 
 # How to Run
 
