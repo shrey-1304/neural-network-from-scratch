@@ -8,7 +8,7 @@ The project focuses on explicitly implementing forward propagation, backpropagat
 
 The model is trained on a synthetic 2D classification dataset to analyze learning behavior, loss convergence, and decision boundary formation.
 
-#What This Project Demonstrates
+# What This Project Demonstrates
 
 * Manual implementation of a feedforward neural network
 
@@ -51,18 +51,17 @@ This project prioritizes clarity and understanding over performance or scalabili
 
 # How to Run
 
-## Clone the repository:
+**Clone the repository:**
 
 git clone <your-repo-url>
 cd neural-network-from-scratch
 
 
-## Install dependencies:
+**Install dependencies:**
 
 pip install -r requirements.txt
 
-
-## Run training:
+**Run training:**
 
 python train.py
 
