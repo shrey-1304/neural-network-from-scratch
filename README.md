@@ -44,10 +44,10 @@ This project prioritizes clarity and understanding over performance or scalabili
       - train.py
       - requirements.txt
 
-      - ## results/
+      - results/
             - decision_boundary.png
             - loss_curve.png
-      - **README.md**
+      - README.md
 
 # How to Run
 
