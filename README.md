@@ -52,19 +52,18 @@ This project prioritizes clarity and understanding over performance or scalabili
 # How to Run
 
 **Clone the repository:**
-
-git clone <your-repo-url>
-cd neural-network-from-scratch
+      ```git clone <your-repo-url>
+      cd neural-network-from-scratch```
 
 
 **Install dependencies:**
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 **Run training:**
-
+```
 python train.py
-
+```
 
 This will:
 
