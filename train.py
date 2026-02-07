@@ -12,19 +12,16 @@ import matplotlib.pyplot as plt
 
 
 def main():
-    # =========================
-    # 1. HYPERPARAMETERS
-    # =========================
+    # HYPERPARAMETERS
     m, h, n = 2, 4, 2     # input dim, hidden units, output classes
-    lr = 0.01            # learning rate
-    epochs = 750         # training epochs
-    N = 300              # number of samples
+    lr = 0.01            
+    epochs = 750        
+    N = 300              
 
     np.random.seed(42)
 
-    # =========================
-    # 2. SYNTHETIC DATA GENERATION
-    # =========================
+
+    # SYNTHETIC DATA GENERATION
     X = np.random.randn(m, N)
 
     # Radial decision boundary (non-linear problem)
@@ -35,17 +32,16 @@ def main():
     Y = np.zeros((n, N))
     Y[labels, np.arange(N)] = 1
 
-    # =========================
-    # 3. PARAMETER INITIALIZATION
-    # =========================
+    # PARAMETER INITIALIZATION
+    
     W1 = np.random.randn(h, m)
     b1 = np.random.randn(h, 1)
     W2 = np.random.randn(n, h)
     b2 = np.random.randn(n, 1)
 
-    # =========================
-    # 4. ACTIVATION FUNCTIONS
-    # =========================
+    
+    # ACTIVATION FUNCTIONS
+    
     def sigmoid(z):
         return 1 / (1 + np.exp(-z))
 
@@ -54,9 +50,8 @@ def main():
         exp_z = np.exp(z)
         return exp_z / np.sum(exp_z, axis=0, keepdims=True)
 
-    # =========================
-    # 5. TRAINING LOOP
-    # =========================
+    
+    # TRAINING LOOP
     loss_history = []
 
     for ep in range(epochs):
@@ -94,9 +89,8 @@ def main():
 
         loss_history.append(total_loss / N)
 
-    # =========================
-    # 6. DECISION BOUNDARY
-    # =========================
+    
+    # DECISION BOUNDARY
     xx, yy = np.meshgrid(
         np.linspace(-3, 3, 300),
         np.linspace(-3, 3, 300)
@@ -121,9 +115,8 @@ def main():
     plt.savefig("decision_boundary.png")
     plt.close()
 
-    # =========================
-    # 7. LOSS CURVE
-    # =========================
+
+    # LOSS CURVE
     plt.figure()
     plt.plot(loss_history)
     plt.xlabel("Epochs")
